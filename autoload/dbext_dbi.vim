@@ -126,28 +126,28 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 function! dbext_dbi#DBI_initialize()
-    if !exists("dbext_dbi_debug")
+    if !exists("g:dbext_dbi_debug")
        let g:dbext_dbi_debug = 0
     endif
-    if !exists("dbext_dbi_result")
+    if !exists("g:dbext_dbi_result")
        let g:dbext_dbi_result = -1
     endif
-    if !exists("dbext_dbi_msg")
+    if !exists("g:dbext_dbi_msg")
        let g:dbext_dbi_msg = ""
     endif
-    if !exists("dbext_dbi_sql")
+    if !exists("g:dbext_dbi_sql")
        let g:dbext_dbi_sql = ""
     endif
-    if !exists("dbext_default_DBI_max_rows")
+    if !exists("g:dbext_default_DBI_max_rows")
        let g:dbext_default_DBI_max_rows = 300
     endif
-    if !exists("dbext_default_DBI_max_column_width")
+    if !exists("g:dbext_default_DBI_max_column_width")
        let g:dbext_default_DBI_max_column_width = 0
     endif
-    if !exists("dbext_default_DBI_column_delimiter")
+    if !exists("g:dbext_default_DBI_column_delimiter")
        let g:dbext_default_DBI_column_delimiter = "  "
     endif
-    if !exists("dbext_dbi_trace_level")
+    if !exists("g:dbext_dbi_trace_level")
        let g:dbext_dbi_trace_level = 0
     endif
 endfunction
